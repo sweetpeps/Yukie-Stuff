@@ -38,11 +38,13 @@ local ImageButton_14 = Instance.new("ImageButton")
 local TextLabel_14 = Instance.new("TextLabel")
 local ImageButton_15 = Instance.new("ImageButton")
 local TextLabel_15 = Instance.new("TextLabel")
+local Chest = Instance.new("ImageButton")
+local TextLabel_16 = Instance.new("TextLabel")
 local GeneralESP = Instance.new("Frame")
 local ImageButton_16 = Instance.new("ImageButton")
-local TextLabel_16 = Instance.new("TextLabel")
-local ImageButton_17 = Instance.new("ImageButton")
 local TextLabel_17 = Instance.new("TextLabel")
+local ImageButton_17 = Instance.new("ImageButton")
+local TextLabel_18 = Instance.new("TextLabel")
 
 --Properties:
 
@@ -52,6 +54,7 @@ YFFG.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Main.Name = "Main"
 Main.Parent = YFFG
+Main.Active = true
 Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Main.BackgroundTransparency = 1.000
 Main.Position = UDim2.new(0.325429261, 0, 0.261755496, 0)
@@ -366,6 +369,26 @@ TextLabel_15.Text = "Plant"
 TextLabel_15.TextColor3 = Color3.fromRGB(140, 135, 108)
 TextLabel_15.TextSize = 14.000
 
+Chest.Name = "Chest"
+Chest.Parent = Farming
+Chest.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Chest.BackgroundTransparency = 1.000
+Chest.Position = UDim2.new(0, 10, 0, 51)
+Chest.Size = UDim2.new(0, 100, 0, 31)
+Chest.Image = "rbxassetid://498537892"
+Chest.ImageColor3 = Color3.fromRGB(150, 100, 108)
+Chest.ScaleType = Enum.ScaleType.Crop
+
+TextLabel_16.Parent = Chest
+TextLabel_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_16.BackgroundTransparency = 1.000
+TextLabel_16.Position = UDim2.new(-0.0035664367, 0, -0.00600113394, 0)
+TextLabel_16.Size = UDim2.new(0, 100, 0, 31)
+TextLabel_16.Font = Enum.Font.GothamBold
+TextLabel_16.Text = "Chest"
+TextLabel_16.TextColor3 = Color3.fromRGB(140, 135, 108)
+TextLabel_16.TextSize = 14.000
+
 GeneralESP.Name = "GeneralESP"
 GeneralESP.Parent = Main
 GeneralESP.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -383,15 +406,15 @@ ImageButton_16.Image = "rbxassetid://498537892"
 ImageButton_16.ImageColor3 = Color3.fromRGB(150, 100, 108)
 ImageButton_16.ScaleType = Enum.ScaleType.Crop
 
-TextLabel_16.Parent = ImageButton_16
-TextLabel_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_16.BackgroundTransparency = 1.000
-TextLabel_16.Position = UDim2.new(-0.0035664367, 0, -0.00600113394, 0)
-TextLabel_16.Size = UDim2.new(0, 100, 0, 31)
-TextLabel_16.Font = Enum.Font.GothamBold
-TextLabel_16.Text = "Present"
-TextLabel_16.TextColor3 = Color3.fromRGB(140, 135, 108)
-TextLabel_16.TextSize = 14.000
+TextLabel_17.Parent = ImageButton_16
+TextLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_17.BackgroundTransparency = 1.000
+TextLabel_17.Position = UDim2.new(-0.0035664367, 0, -0.00600113394, 0)
+TextLabel_17.Size = UDim2.new(0, 100, 0, 31)
+TextLabel_17.Font = Enum.Font.GothamBold
+TextLabel_17.Text = "Present"
+TextLabel_17.TextColor3 = Color3.fromRGB(140, 135, 108)
+TextLabel_17.TextSize = 14.000
 
 ImageButton_17.Parent = GeneralESP
 ImageButton_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -402,15 +425,15 @@ ImageButton_17.Image = "rbxassetid://498537892"
 ImageButton_17.ImageColor3 = Color3.fromRGB(150, 100, 108)
 ImageButton_17.ScaleType = Enum.ScaleType.Crop
 
-TextLabel_17.Parent = ImageButton_17
-TextLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_17.BackgroundTransparency = 1.000
-TextLabel_17.Position = UDim2.new(-0.00356644392, 0, -0.00600123405, 0)
-TextLabel_17.Size = UDim2.new(0, 100, 0, 31)
-TextLabel_17.Font = Enum.Font.GothamBold
-TextLabel_17.Text = "Rabbit Hole"
-TextLabel_17.TextColor3 = Color3.fromRGB(140, 135, 108)
-TextLabel_17.TextSize = 14.000
+TextLabel_18.Parent = ImageButton_17
+TextLabel_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_18.BackgroundTransparency = 1.000
+TextLabel_18.Position = UDim2.new(-0.00356644392, 0, -0.00600123405, 0)
+TextLabel_18.Size = UDim2.new(0, 100, 0, 31)
+TextLabel_18.Font = Enum.Font.GothamBold
+TextLabel_18.Text = "Rabbit Hole"
+TextLabel_18.TextColor3 = Color3.fromRGB(140, 135, 108)
+TextLabel_18.TextSize = 14.000
 
 -- Module Scripts:
 
@@ -849,7 +872,7 @@ end
 
 -- Scripts:
 
-local function TOUAMOG_fake_script() -- Main.LocalScript 
+local function OYSVJAW_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 	local req = require
 	local require = function(obj)
@@ -881,8 +904,8 @@ local function TOUAMOG_fake_script() -- Main.LocalScript
 	
 	
 end
-coroutine.wrap(TOUAMOG_fake_script)()
-local function ZFHXPGT_fake_script() -- ImageButton.LocalScript 
+coroutine.wrap(OYSVJAW_fake_script)()
+local function WQDPH_fake_script() -- ImageButton.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton)
 	local req = require
 	local require = function(obj)
@@ -903,8 +926,8 @@ local function ZFHXPGT_fake_script() -- ImageButton.LocalScript
 		script.Parent.Parent.Parent.OreESP.Visible = true
 	end)
 end
-coroutine.wrap(ZFHXPGT_fake_script)()
-local function JUSYHL_fake_script() -- ImageButton_2.LocalScript 
+coroutine.wrap(WQDPH_fake_script)()
+local function ESBZVB_fake_script() -- ImageButton_2.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton_2)
 	local req = require
 	local require = function(obj)
@@ -925,8 +948,8 @@ local function JUSYHL_fake_script() -- ImageButton_2.LocalScript
 		script.Parent.Parent.Parent.GeneralESP.Visible = true
 	end)
 end
-coroutine.wrap(JUSYHL_fake_script)()
-local function HOJAHV_fake_script() -- ImageButton_3.LocalScript 
+coroutine.wrap(ESBZVB_fake_script)()
+local function GUHBH_fake_script() -- ImageButton_3.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton_3)
 	local req = require
 	local require = function(obj)
@@ -950,8 +973,8 @@ local function HOJAHV_fake_script() -- ImageButton_3.LocalScript
 		
 	end)
 end
-coroutine.wrap(HOJAHV_fake_script)()
-local function XMZE_fake_script() -- List.LocalScript 
+coroutine.wrap(GUHBH_fake_script)()
+local function VQYRR_fake_script() -- List.LocalScript 
 	local script = Instance.new('LocalScript', List)
 	local req = require
 	local require = function(obj)
@@ -966,8 +989,8 @@ local function XMZE_fake_script() -- List.LocalScript
 	SmoothScroll.Enable(script.Parent)
 	
 end
-coroutine.wrap(XMZE_fake_script)()
-local function KPMIF_fake_script() -- ImageButton_4.LocalScript 
+coroutine.wrap(VQYRR_fake_script)()
+local function VDETAAO_fake_script() -- ImageButton_4.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton_4)
 	local req = require
 	local require = function(obj)
@@ -1016,8 +1039,8 @@ local function KPMIF_fake_script() -- ImageButton_4.LocalScript
 	end
 	end)
 end
-coroutine.wrap(KPMIF_fake_script)()
-local function YLGO_fake_script() -- ImageButton_5.LocalScript 
+coroutine.wrap(VDETAAO_fake_script)()
+local function CAUIS_fake_script() -- ImageButton_5.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton_5)
 	local req = require
 	local require = function(obj)
@@ -1066,8 +1089,8 @@ local function YLGO_fake_script() -- ImageButton_5.LocalScript
 	end
 	end)
 end
-coroutine.wrap(YLGO_fake_script)()
-local function GCFG_fake_script() -- ImageButton_6.LocalScript 
+coroutine.wrap(CAUIS_fake_script)()
+local function TWURKN_fake_script() -- ImageButton_6.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton_6)
 	local req = require
 	local require = function(obj)
@@ -1116,8 +1139,8 @@ local function GCFG_fake_script() -- ImageButton_6.LocalScript
 	end
 	end)
 end
-coroutine.wrap(GCFG_fake_script)()
-local function QBPB_fake_script() -- ImageButton_7.LocalScript 
+coroutine.wrap(TWURKN_fake_script)()
+local function LKZAUQR_fake_script() -- ImageButton_7.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton_7)
 	local req = require
 	local require = function(obj)
@@ -1166,8 +1189,8 @@ local function QBPB_fake_script() -- ImageButton_7.LocalScript
 	end
 	end)
 end
-coroutine.wrap(QBPB_fake_script)()
-local function AMCG_fake_script() -- ImageButton_8.LocalScript 
+coroutine.wrap(LKZAUQR_fake_script)()
+local function USUMS_fake_script() -- ImageButton_8.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton_8)
 	local req = require
 	local require = function(obj)
@@ -1216,8 +1239,8 @@ local function AMCG_fake_script() -- ImageButton_8.LocalScript
 	end
 	end)
 end
-coroutine.wrap(AMCG_fake_script)()
-local function WNME_fake_script() -- ImageButton_9.LocalScript 
+coroutine.wrap(USUMS_fake_script)()
+local function WOYHF_fake_script() -- ImageButton_9.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton_9)
 	local req = require
 	local require = function(obj)
@@ -1266,8 +1289,8 @@ local function WNME_fake_script() -- ImageButton_9.LocalScript
 	end
 	end)
 end
-coroutine.wrap(WNME_fake_script)()
-local function XLWQD_fake_script() -- ImageButton_10.LocalScript 
+coroutine.wrap(WOYHF_fake_script)()
+local function SYHRWCV_fake_script() -- ImageButton_10.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton_10)
 	local req = require
 	local require = function(obj)
@@ -1316,8 +1339,8 @@ local function XLWQD_fake_script() -- ImageButton_10.LocalScript
 	end
 	end)
 end
-coroutine.wrap(XLWQD_fake_script)()
-local function HQSRAKK_fake_script() -- ImageButton_11.LocalScript 
+coroutine.wrap(SYHRWCV_fake_script)()
+local function QGBYH_fake_script() -- ImageButton_11.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton_11)
 	local req = require
 	local require = function(obj)
@@ -1366,8 +1389,8 @@ local function HQSRAKK_fake_script() -- ImageButton_11.LocalScript
 	end
 	end)
 end
-coroutine.wrap(HQSRAKK_fake_script)()
-local function AGIZZ_fake_script() -- ImageButton_12.LocalScript 
+coroutine.wrap(QGBYH_fake_script)()
+local function KDEXUJ_fake_script() -- ImageButton_12.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton_12)
 	local req = require
 	local require = function(obj)
@@ -1416,8 +1439,8 @@ local function AGIZZ_fake_script() -- ImageButton_12.LocalScript
 	end
 	end)
 end
-coroutine.wrap(AGIZZ_fake_script)()
-local function CQRFOI_fake_script() -- ImageButton_13.LocalScript 
+coroutine.wrap(KDEXUJ_fake_script)()
+local function WDTHK_fake_script() -- ImageButton_13.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton_13)
 	local req = require
 	local require = function(obj)
@@ -1466,8 +1489,8 @@ local function CQRFOI_fake_script() -- ImageButton_13.LocalScript
 	end
 	end)
 end
-coroutine.wrap(CQRFOI_fake_script)()
-local function SACPO_fake_script() -- ImageButton_14.LocalScript 
+coroutine.wrap(WDTHK_fake_script)()
+local function WHNNIN_fake_script() -- ImageButton_14.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton_14)
 	local req = require
 	local require = function(obj)
@@ -1587,8 +1610,8 @@ local function SACPO_fake_script() -- ImageButton_14.LocalScript
 		end
 	end)
 end
-coroutine.wrap(SACPO_fake_script)()
-local function DVAGUD_fake_script() -- ImageButton_15.LocalScript 
+coroutine.wrap(WHNNIN_fake_script)()
+local function VJFAHVE_fake_script() -- ImageButton_15.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton_15)
 	local req = require
 	local require = function(obj)
@@ -1716,8 +1739,76 @@ local function DVAGUD_fake_script() -- ImageButton_15.LocalScript
 		end
 	end)
 end
-coroutine.wrap(DVAGUD_fake_script)()
-local function NUAOCH_fake_script() -- ImageButton_16.LocalScript 
+coroutine.wrap(VJFAHVE_fake_script)()
+local function XQSUBD_fake_script() -- Chest.LocalScript 
+	local script = Instance.new('LocalScript', Chest)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local plr = game.Players.LocalPlayer
+	local cha = plr.Character
+	local lastmsg = ""
+	plr.Chatted:Connect(function(msg)
+		lastmsg = msg
+	end)
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local oninv = 1
+		local plr = game.Players.LocalPlayer
+		local char = plr.Character
+		local rod = lastmsg
+		--"AdvFishingRod"
+	
+		wait(3)
+		char[rod]:Activate()
+		coroutine.resume(coroutine.create(function()
+			char[rod].DescendantAdded:Connect(function(a)
+				if a.Name == "SplashPart" then
+					char[rod]:Activate()
+					wait(5)
+					char[rod]:Activate()
+				end
+			end)
+		end))
+		for i, v in pairs(plr.PlayerGui.Inventory.Main.INV_SF:GetChildren()) do
+			v.Item.HoverText:GetPropertyChangedSignal("Value"):Connect(function()
+				wait(2)
+				if oninv > 9 then
+					if v.Name == "S"..oninv then
+						if plr.PlayerGui.Inventory.Main.INV_SF["S"..oninv].Item.HoverText.Value:lower():find("chest") then
+							oninv = oninv + 1
+						else
+							game.ReplicatedStorage.Events.DropItem:FireServer(plr.PlayerGui.Inventory.Main.INV_SF["S"..oninv].Item.ItemCode.Value, 1, char.HumanoidRootPart.Position)
+						end
+	
+					end
+				else
+					if v.Name == "S0"..oninv then
+						print("oki checking")
+	
+						if plr.PlayerGui.Inventory.Main.INV_SF["S0"..oninv].Item.HoverText.Value:lower():find("chest") then
+							oninv = oninv + 1
+						else
+							print("oki drop")
+							print(plr.PlayerGui.Inventory.Main.INV_SF["S0"..oninv].Item.ItemCode.Value)
+							game.ReplicatedStorage.Events.DropItem:FireServer(plr.PlayerGui.Inventory.Main.INV_SF["S0"..oninv].Item.ItemCode.Value, 1, char.HumanoidRootPart.Position)
+						end
+					end
+				end
+			end)
+		end
+	
+	
+	end)
+end
+coroutine.wrap(XQSUBD_fake_script)()
+local function NDFG_fake_script() -- ImageButton_16.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton_16)
 	local req = require
 	local require = function(obj)
@@ -1797,8 +1888,8 @@ local function NUAOCH_fake_script() -- ImageButton_16.LocalScript
 		end
 	end
 end
-coroutine.wrap(NUAOCH_fake_script)()
-local function TDYBGN_fake_script() -- ImageButton_17.LocalScript 
+coroutine.wrap(NDFG_fake_script)()
+local function JUWZ_fake_script() -- ImageButton_17.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton_17)
 	local req = require
 	local require = function(obj)
@@ -1870,4 +1961,4 @@ local function TDYBGN_fake_script() -- ImageButton_17.LocalScript
 	    
 	end
 end
-coroutine.wrap(TDYBGN_fake_script)()
+coroutine.wrap(JUWZ_fake_script)()
